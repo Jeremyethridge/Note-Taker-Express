@@ -3,7 +3,21 @@ const path = require('path');
 const notesRoutes = require('./routes/noteRoutes')
 const PORT = process.env.PORT || 3001;
 const app = express();
+const cors = require('cors');
 
+const allowOrigins = ["https://express-notepad.netlify.app/"];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || allowOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+};
+
+app.use(cors(corsOptions));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
