@@ -10,7 +10,7 @@ This is a note taking application created using Express.js for the backend. In t
 4. Node Server.js to run the application on your local port
 
 ## Deployed Application
-   [Click Here For the Application](https://express-node-application.netlify.app/)
+  [Deployed Application](https://note-taker-express-bzs2.onrender.com/)
 ## Screenshot
 ![Note-application](https://github.com/user-attachments/assets/75554777-8cd3-4e84-99be-848b980bb7c3)
 
