@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "cd server && npm run build"
+  },
+
+  "dependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
